@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mineifnmg.net:33060/grafichub
+    username: root
+    password: admin
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:12345678}
+      issuer: 'API Grafic.Hub'
